@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>imsamimalik - it's not just a name</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "imsamimalik",
+        "url": "https://imsamimalik.com",
+        "logo": "https://i.ibb.co/SVpwGhf/icon.png",
+        "founder": "Sami Malik",
+        "slogan": "it's not just a name"
+      }
+    </script>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffc107" />
+    <link rel="icon" href="./icons/icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="imsamimalik" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="./icons/icon.png" />
+    <meta property="og:title" content="imsamimalik" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/RPFs7pf/portfolio.png"
+    />
+    <meta property="og:image" content="https://i.ibb.co/FW03qd9/icon.png" />
+    <meta property="og:url" content="https://imsamimalik.com/" />
+    <meta property="og:description" content="it's not just a name" />
+    <meta
+      property="og:site_name"
+      content="imsamimalik - it's not just a name."
+    />
+    <meta name="title" content="imsamimalik" />
+    <meta name="description" content="it's not just a name" />
+    <meta
+      name="keywords"
+      content="samimalik,sami,malik,imsamimalik,portfolio"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@imsamimalik" />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/RPFs7pf/portfolio.png"
+    />
+    <meta name="twitter:image:alt" content="imsamimalik" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Sami Malik" />
+    <link defer rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
+  </head>
+
+  <body>
+    <noscript>
+      <h1>You need to enable JavaScript to run this app.</h1>
+    </noscript>
+    <div id="app"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
+            .then((reg) =>
+              console.log(`
+
+
+      8888888888 888      888      .d88888b.           888b     d888        d8888 88888888888 8888888888
+      888        888      888     d88P" "Y88b          8888b   d8888       d88888     888     888       
+      888        888      888     888     888          88888b.d88888      d88P888     888     888       
+      8888888    888      888     888     888          888Y88888P888     d88P 888     888     8888888   
+      888        888      888     888     888          888 Y888P 888    d88P  888     888     888       
+      888        888      888     888     888          888  Y8P  888   d88P   888     888     888       
+      888        888      888     Y88b. .d88P          888   "   888  d8888888888     888     888       
+      8888888888 88888888 88888888 "Y88888P"           888       888 d88P     888     888     8888888888
+
+
+
+                  `)
+            )
+            .catch((err) => console.log("Failure: ", err));
+        });
+      }
+    </script>
+    <link rel="stylesheet" href="./bootstrap-grid.css" />
+  </body>
+</html>
